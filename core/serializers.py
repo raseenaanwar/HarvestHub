@@ -9,7 +9,7 @@ class UserSerializer(serializers.ModelSerializer):
 class FoodItemSerializer(serializers.ModelSerializer):
     class Meta:
         model = FoodItem
-        fields = ['id', 'type', 'quantity', 'expiration_date', 'location', 'donor', 'condition', 'category', 'created_at', 'updated_at']
+        fields = ['id', 'food_type', 'quantity', 'expiration_date', 'location', 'donor', 'condition', 'created_at', 'updated_at']
 
 class TransactionSerializer(serializers.ModelSerializer):
     class Meta:

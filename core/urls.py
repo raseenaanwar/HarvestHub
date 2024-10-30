@@ -1,5 +1,4 @@
 from django.urls import path
-from .views import UserList, FoodItemList, TransactionList, PickUpScheduleList
 
 from django.urls import path
 from .views import (
@@ -9,6 +8,8 @@ from .views import (
     PickUpScheduleListCreateView, PickUpScheduleRetrieveUpdateDeleteView,
     AutoAssignVolunteerView
 )
+
+
 
 urlpatterns = [
     path('users/', UserListCreateView.as_view(), name='user-list-create'),
